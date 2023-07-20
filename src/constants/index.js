@@ -207,7 +207,30 @@ import {
       ],
       image: jobit,
       source_code_link: "https://folio-apps.netlify.app/",
-    }
+    },
+
+    {
+      name: "CoinEx",
+      description:
+        "A Crpyto based landing page Web application that enables users to explore the brand" ,
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "js",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://coinex-crypto.netlify.app/",
+    },
+
   ];
   
   export { services, technologies, experiences, testimonials, projects };

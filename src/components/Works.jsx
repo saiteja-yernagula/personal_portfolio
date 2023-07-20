@@ -16,8 +16,8 @@ const ProjectCard=({index, name , description,tags,image, source_code_link})=>{
         scale:1,
         speed:450
       }}
-      className="bg-tertiary p-5 rounded-2xl sm:w-[460px] w-full h-[500px]">
-        <div className="relative w-full h-[230px]">
+      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[500px] m-1">
+        <div className="relative w-full h-[200px]">
           <img
           src={image}
           alt={name}
@@ -36,7 +36,7 @@ const ProjectCard=({index, name , description,tags,image, source_code_link})=>{
           <p className="mt-2 text-secondary text=[14px]">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-3">
+        <div className="mt-4 flex flex-wrap gap-5">
           {tags.map((tag)=>{
             return (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
@@ -72,7 +72,7 @@ const Works = () => {
       </motion.p>
      </div>
 
-     <div className="mt-20 flex flex-wrap gap-7">
+     <div className="mt-20 flex flex-wrap gap-4">
       {
         projects.map((project,index)=>(
           <ProjectCard key={`project-${index}}`}
